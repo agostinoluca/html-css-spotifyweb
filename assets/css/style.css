@@ -8,4 +8,14 @@
 body {
     font-family: 'Montserrat', sans-serif;
 }
+
+:root {
+    --spotify-primary: #141922;
+    --spotify-header: #00000080;
+    --spotify-black: #000000;
+    --spotify-white: #ffffff;
+    --spotify-grey-word: #727272;
+    --spotify-grey-icon: #a3a3a3;
+    --spotity-grey-toolbar: #282828;
+}
 /* #endregion Common */
