@@ -1,3 +1,32 @@
+/* #region Debug */
+.debug #site_main {
+    border: 2px solid red;
+}    
+
+.debug .nav_bar {
+    background-color: aqua;
+}
+
+.debug .banner_upgrade {
+    background-color: rgba(128, 128, 128, 0.726);
+}
+
+.debug .container {
+    border: 2px white dotted;
+    background-color: red;
+}
+
+.debug .album_nav {
+    background-color: blue;
+    height: 50px;
+}
+
+.debug #toolbar {
+    background-color: rgb(55, 136, 129);
+}
+/* #endregion Debug */
+
+
 /* #region Common */
 * {
     margin: 0;
@@ -19,3 +48,59 @@ body {
     --spotity-grey-toolbar: #282828;
 }
 /* #endregion Common */
+
+/* #region Utility */
+.row {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 -1rem
+}
+
+[class^="col-"] {
+	padding: 0 1rem;
+}
+
+.d-flex {
+    display: flex;
+}
+/* #endregion Utility */
+
+/* #region Main */
+#site_main {
+    height: calc(100vh - 70px);
+}
+
+.nav_bar {
+    min-width: 13rem;
+}
+
+.debug .banner_upgrade {
+    height: 70px;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+}
+
+.debug .container {
+    width: 100%;
+    overflow: auto;
+}
+
+.playlist {
+    width: 100%;
+    height: 100%;
+    padding-top: 70px;
+}
+
+.album_list {
+    height: 100%;
+}
+
+.debug #toolbar {
+    height: 70px;
+    width: 100vw;
+    position: fixed;
+    z-index: 1;
+}
+/* #endregion Main */
+
