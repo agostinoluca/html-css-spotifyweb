@@ -11,7 +11,7 @@
     background-color: rgba(128, 128, 128, 0.726);
 }
 
-.debug .container {
+.debug .album_container {
     border: 2px white dotted;
     background-color: red;
 }
@@ -19,6 +19,12 @@
 .debug .album_nav {
     background-color: blue;
     height: 50px;
+}
+
+.debug .col-2 {
+    background-color: black;
+    border: 1px solid white;
+    height: 200px;
 }
 
 .debug #toolbar {
@@ -50,6 +56,11 @@ body {
 /* #endregion Common */
 
 /* #region Utility */
+.container {
+	margin: auto;
+	width: 95%;
+}
+
 .row {
 	display: flex;
 	flex-wrap: wrap;
@@ -60,8 +71,28 @@ body {
 	padding: 0 1rem;
 }
 
+.col-2 {
+    width: calc((100% / 12) * 2);
+}
+
 .d-flex {
     display: flex;
+}
+
+.fw-wrap {
+    flex-wrap: wrap;
+}
+
+.m-auto {
+    margin: auto;
+}
+
+.p-y-4 {
+    padding: 1rem 0;
+}
+
+.space-between {
+    justify-content: space-between;
 }
 /* #endregion Utility */
 
@@ -74,14 +105,14 @@ body {
     min-width: 13rem;
 }
 
-.debug .banner_upgrade {
+.banner_upgrade {
     height: 70px;
     width: 100%;
     position: fixed;
     z-index: 1;
 }
 
-.debug .container {
+.album_container {
     width: 100%;
     overflow: auto;
 }
@@ -96,7 +127,7 @@ body {
     height: 100%;
 }
 
-.debug #toolbar {
+#toolbar {
     height: 70px;
     width: 100vw;
     position: fixed;
