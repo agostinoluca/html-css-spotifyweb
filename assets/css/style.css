@@ -4,31 +4,37 @@
 }    
 
 .debug .nav_bar {
-    background-color: aqua;
+    border: 2px solid green;
+}
+
+.debug .logo {
+    border: 1px dotted white;
+}
+
+.debug .nav_btn {
+    border: 1px dotted white;
 }
 
 .debug .banner_upgrade {
-    background-color: rgba(128, 128, 128, 0.726);
+    border: 2px dashed grey;
 }
 
 .debug .album_container {
-    border: 2px white dotted;
-    background-color: red;
+    border: 2px solid white;
 }
 
 .debug .album_nav {
-    background-color: blue;
-    min-height: 50px;
+    border: 2px dashed blue;
 }
 
 .debug [class^="col-"] {
     background-color: black;
-    border: 1px solid white;
+    border: 1px solid pink;
     min-height: 100px;
 }
 
 .debug #toolbar {
-    background-color: rgb(55, 136, 129);
+    border: 1px solid blue;
 }
 /* #endregion Debug */
 
@@ -62,6 +68,12 @@ ul {
 
 a {
     text-decoration: none;
+}
+
+a:hover,
+i:hover {
+    filter: brightness(100);
+    color: var(--spotify-white);
 }
 /* #endregion Common */
 
@@ -99,6 +111,10 @@ a {
 
 .m-auto {
     margin: auto;
+}
+
+.p-4 {
+    padding: 1rem;
 }
 
 .p-y-4 {
@@ -142,6 +158,24 @@ a {
 .nav_bar {
     min-width: 13rem;
     background-color: var(--spotify-black);
+    & .logo {
+        padding: 1rem;
+    }
+    & .nav_btn {
+        padding: 1rem 0;
+    }
+    & .selected {
+        border-left: 3px solid var(--spotify-success);
+    }
+    & .nav_btn i {
+        font-size: 2rem;
+        color: var(--spotify-grey-word);
+        padding: 0.5rem 1rem;
+        width: 30%;
+    }
+    & .nav_btn a {
+        color: var(--spotify-grey-word);
+    } 
 }
 
 .banner_upgrade {
