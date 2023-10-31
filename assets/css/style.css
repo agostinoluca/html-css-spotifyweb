@@ -15,6 +15,10 @@
     border: 1px dotted white;
 }
 
+.debug .playlist {
+    border: 1px dotted red;
+}
+
 .debug .banner_upgrade {
     border: 2px dashed grey;
 }
@@ -109,6 +113,10 @@ i:hover {
     flex-wrap: wrap;
 }
 
+.flex-end {
+    align-items:flex-end;
+}
+
 .m-auto {
     margin: auto;
 }
@@ -162,6 +170,13 @@ i:hover {
 .nav_bar {
     min-width: 20rem;
     background-color: var(--spotify-black);
+    flex-direction: column;
+    & a {
+        color: var(--spotify-grey-word);
+    }
+    & i {
+        color: var(--spotify-grey-word);
+    }
     & .logo {
         padding: 1rem;
     }
@@ -170,7 +185,6 @@ i:hover {
     }
     & .nav_btn i {
         font-size: 2rem;
-        color: var(--spotify-grey-word);
         padding: 0.5rem 0.75rem;
         width: 18%;
     }
@@ -181,7 +195,6 @@ i:hover {
         border-left: 5px solid var(--spotify-black);
     }
     & .nav_btn a {
-        color: var(--spotify-grey-word);
         font-weight: 700;
         font-size: 18px;
     }
@@ -208,7 +221,8 @@ i:hover {
         font-weight: 700;
         font-size: 20px;    
     }
-    & .playlist .create_playlist:hover {
+    & .playlist .create_playlist:hover,
+      .install_app:hover {
         cursor: pointer;
         filter: brightness(100);
     }
@@ -216,9 +230,19 @@ i:hover {
         padding: 0.50rem 0;
     }
     & .playlist a {
-        color: var(--spotify-grey-word);
         font-weight: 600;
         font-size: 18px;
+    }
+    & .install_app {
+        padding: 1rem;
+    }
+    & .install_app i {
+        padding-right: 0.75rem;
+        font-size: 1rem;
+    }
+    & .install_app a {
+        font-size: 18px;
+        font-weight: 500;
     }
 }
 
