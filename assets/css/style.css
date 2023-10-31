@@ -30,7 +30,7 @@
 .debug [class^="col-"] {
     background-color: black;
     border: 1px solid pink;
-    min-height: 100px;
+    min-height: 50px;
 }
 
 .debug #toolbar {
@@ -156,11 +156,11 @@ i:hover {
 
 /* #region Main */
 #site_main {
-    height: calc(100vh - 70px);
+    height: calc(100vh - 125px);
 }
 
 .nav_bar {
-    min-width: 13rem;
+    min-width: 20rem;
     background-color: var(--spotify-black);
     & .logo {
         padding: 1rem;
@@ -172,7 +172,7 @@ i:hover {
         font-size: 2rem;
         color: var(--spotify-grey-word);
         padding: 0.5rem 0.75rem;
-        width: 30%;
+        width: 18%;
     }
     & .selected {
         border-left: 3px solid var(--spotify-success);
@@ -183,6 +183,7 @@ i:hover {
     & .nav_btn a {
         color: var(--spotify-grey-word);
         font-weight: 700;
+        font-size: 18px;
     }
     & .selected i, .selected a {
         color: var(--spotify-grey-icon);
@@ -190,6 +191,8 @@ i:hover {
     & h4 {
         color: var(--spotify-white);
         padding-bottom: 0.75rem;
+        font-weight: 900;
+        font-size: 18px;
     }
     & .playlist {
         padding: 1rem;
@@ -197,11 +200,13 @@ i:hover {
     & .playlist i {
         font-size: 3.5rem;
         color: var(--spotify-grey-icon);
+        padding-bottom: 1rem;
     }
     & .playlist span {
         color: var(--spotify-grey-word);
         padding-left: 0.5rem;
         font-weight: 700;
+        font-size: 20px;    
     }
     & .playlist .create_playlist:hover {
         cursor: pointer;
@@ -212,13 +217,14 @@ i:hover {
     }
     & .playlist a {
         color: var(--spotify-grey-word);
-        font-weight: 500;
+        font-weight: 600;
+        font-size: 18px;
     }
 }
 
 .banner_upgrade {
     background-color: var(--spotify-header);
-    height: 70px;
+    height: 125px;
     width: 100%;
     position: fixed;
     z-index: 1;
@@ -233,7 +239,7 @@ i:hover {
 .discography {
     width: 100%;
     height: 100%;
-    padding-top: 70px;
+    padding-top: 125px;
 }
 
 .album_nav {
@@ -266,7 +272,7 @@ i:hover {
 }
 
 #toolbar {
-    height: 70px;
+    height: 125px;
     width: 100vw;
     position: fixed;
     z-index: 1;
