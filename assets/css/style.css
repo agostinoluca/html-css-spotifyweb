@@ -23,6 +23,11 @@
     border: 2px dashed grey;
 }
 
+.debug .subscription {
+    border: 1px yellow dotted;
+    min-height: 20px;
+}
+
 .debug .album_container {
     border: 2px solid white;
 }
@@ -31,8 +36,15 @@
     border: 2px dashed blue;
 }
 
+.debug .top_bar {
+    border: 1px dashed yellow;
+}
+
+.debug .bottom_bar {
+    border: 1px dashed yellow;
+}
+
 .debug [class^="col-"] {
-    background-color: black;
     border: 1px solid pink;
     min-height: 50px;
 }
@@ -72,6 +84,12 @@ ul {
 
 a {
     text-decoration: none;
+}
+
+button {
+    border: none;
+    background-color: transparent;
+    font-family: 'Montserrat', sans-serif;
 }
 
 a:hover,
@@ -125,12 +143,32 @@ i:hover {
     padding: 1rem;
 }
 
+.p-7 {
+    padding: 1.75rem;
+}
+
+.p-x-4 {
+    padding: 0 1rem;
+}
+
+.p-x-7 {
+    padding: 0 1.75rem;
+}
+
 .p-y-4 {
     padding: 1rem 0;
 }
 
+.p-bottom-5 {
+    padding-bottom: 1.25rem;
+}
+
 .justify-center {
     justify-content: center;
+}
+
+.justify-end {
+    justify-content: end;
 }
 
 .space-between {
@@ -177,16 +215,10 @@ i:hover {
     & i {
         color: var(--spotify-grey-word);
     }
-    & .logo {
-        padding: 1rem;
-    }
-    & .nav_btn {
-        padding: 1rem 0;
-    }
     & .nav_btn i {
         font-size: 2rem;
-        padding: 0.5rem 0.75rem;
-        width: 18%;
+        padding: 0.5rem 1.75rem;
+        width: 22%;
     }
     & .selected {
         border-left: 3px solid var(--spotify-success);
@@ -203,12 +235,8 @@ i:hover {
     } 
     & h4 {
         color: var(--spotify-white);
-        padding-bottom: 0.75rem;
         font-weight: 900;
         font-size: 18px;
-    }
-    & .playlist {
-        padding: 1rem;
     }
     & .playlist i {
         font-size: 3.5rem;
@@ -227,14 +255,11 @@ i:hover {
         filter: brightness(100);
     }
     & .playlist li {
-        padding: 0.50rem 0;
+        padding: 1rem 0;
     }
     & .playlist a {
         font-weight: 600;
         font-size: 18px;
-    }
-    & .install_app {
-        padding: 1rem;
     }
     & .install_app i {
         padding-right: 0.75rem;
@@ -244,14 +269,36 @@ i:hover {
         font-size: 18px;
         font-weight: 500;
     }
+    & .hr_bottom_bar {
+        border: 1px solid var(--spotify-grey-word);
+    }
+    & .now_playing i {
+        font-size: 2rem;
+        padding-right: 0.5rem;
+        color: var(--spotify-grey-icon);
+    }
 }
 
 .banner_upgrade {
     background-color: var(--spotify-header);
     height: 125px;
-    width: 100%;
+    width: calc(100% - 20rem);
     position: fixed;
     z-index: 1;
+    & .subscription {
+        padding-right: 1.75rem;
+    }
+    & .btn {
+        color: var(--spotify-white);
+        padding: 1rem 3.5rem;
+        font-size: 1rem;
+        font-weight: 700;
+        border: 1px solid var(--spotify-white);
+        border-radius: 3rem;
+    }
+    & .btn:hover {
+        transform: scale(1.1);
+    }
 }
 
 .album_container {
@@ -269,7 +316,6 @@ i:hover {
 .album_nav {
     justify-content: center;
     align-items: center;
-    padding: 1rem 0;
     & a {
         color: var(--spotify-grey-word);
         padding: 0 0.5rem;

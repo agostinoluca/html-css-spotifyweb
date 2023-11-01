@@ -18,11 +18,11 @@
     <main id="site_main" class="d-flex">
         <div class="nav_bar d-flex space-between">
             <div class="top_bar">
-                <div class="logo">
+                <div class="logo p-7">
                     <img src="./assets/img/logo.svg" width="200" alt="Spotify-logo">
                 </div>
                 <!-- /.logo -->
-                <div class="nav_btn">
+                <div class="nav_btn p-y-4">
                     <ul>
                         <li class="selected">
                             <a href="#">
@@ -48,8 +48,8 @@
                     </ul>
                 </div>
                 <!-- /.nav_btn -->
-                <div class="playlist">
-                    <h4>PLAYLIST</h4>
+                <div class="playlist p-7">
+                    <h4 class="p-bottom-5">PLAYLIST</h4>
                     <div class="create_playlist d-flex align-center">
                         <i class="fa-solid fa-square-plus"></i>
                         <span>Crea Playlist</span>
@@ -83,21 +83,30 @@
                 <!-- /.playlist -->
             </div>
             <!-- /.top_bar -->
-            <div class="bottom_bar">
-                <div class="install_app d-flex align-center">
+            <div class="bottom_bar p-x-7">
+                <div class="install_app d-flex align-center p-y-4">
                     <i class="fa-regular fa-circle-down"></i>
                     <span><a href="#">Installa app</a></span>
                 </div>
                 <!-- /.install_app -->
+                <hr class="hr_bottom_bar">
+                <div class="now_playing d-flex align-center p-y-4">
+                    <i class="fa-regular fa-circle-user"></i>
+                    <h4>John Doe</h4>
+                </div>
             </div>
             <!-- /.bottom_bar -->
         </div>
         <!-- /.nav_bar -->
         <div class="album_container"> 
-            <div class="banner_upgrade"></div>
+            <div class="banner_upgrade d-flex align-center justify-end">
+                <div class="subscription">
+                    <button class="btn">EFFETTUA L'UPGRADE</button>
+                </div>
+            </div>
             <!-- /.banner_upgrade -->
-            <div class="discography">
-                <div class="album_nav d-flex">
+            <div class="discography p-x-4">
+                <div class="album_nav d-flex p-y-4">
                     <ul class="d-flex fw-wrap justify-center">
                         <li>
                             <a href="#">IN EVIDENZA</a>
