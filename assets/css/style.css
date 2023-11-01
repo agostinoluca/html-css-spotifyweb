@@ -136,10 +136,15 @@ i:hover {
     width: 100%;
 }
 
+.radius-100 {
+    border-radius: 100%;
+}
+
 .album_card {
     width: 15rem;
     aspect-ratio: 1 / 1;
 }
+
 
 img {
     width: 100%;
@@ -207,6 +212,10 @@ img {
 
 .p-y-4 {
     padding: 1rem 0;
+}
+
+.p-top-14 {
+    padding-top: 3.5rem;
 }
 
 .p-bottom-5 {
@@ -390,6 +399,9 @@ img {
 .album_list {
     height: 100%;
     padding-top: 3rem;
+    & .album_card {
+        padding-top: 1rem;
+    }
     & h2 {
         font-size: 2rem;
         font-weight: 800;
@@ -405,6 +417,12 @@ img {
         font-size: 1rem;
         font-weight: 800;
         color: var(--spotify-grey-word);
+    }
+    & p {
+        font-size: 1rem;
+        font-weight: 800;
+        color: var(--spotify-grey-word);
+        padding-top: 1.5rem;
     }
 }
 
