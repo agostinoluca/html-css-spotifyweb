@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="./assets/css/style.css">
     <title>Spotify</title>
 </head>
-<body class="debug">
+<body class="">
   
     <main id="site_main" class="d-flex">
         <div class="nav_bar d-flex space-between">
@@ -89,11 +89,14 @@
                     <span><a href="#">Installa app</a></span>
                 </div>
                 <!-- /.install_app -->
+                
                 <hr class="hr_bottom_bar">
+                
                 <div class="now_playing d-flex align-center p-y-4">
                     <i class="fa-regular fa-circle-user"></i>
                     <h4>John Doe</h4>
                 </div>
+                <!-- /.now playing -->
             </div>
             <!-- /.bottom_bar -->
         </div>
@@ -105,7 +108,7 @@
                 </div>
             </div>
             <!-- /.banner_upgrade -->
-            <div class="discography p-x-4">
+            <div class="discography p-x-7">
                 <div class="album_nav d-flex p-y-4">
                     <ul class="d-flex fw-wrap justify-center">
                         <li>
@@ -162,13 +165,68 @@
                 </div>
                 <!-- /.album_list -->
             </div>
-            <!-- /.playlist -->
+            <!-- /.discography -->
         </div>
         <!-- /.album_container -->
     </main>
     <!-- /#site_main -->
 
-    <footer id="toolbar">
+    <footer id="toolbar" class="d-flex space-between">
+        <div class="toolbar_left d-flex align-center">
+            <div class="album_card">
+                <img src="./assets/img/sinister.jpeg" alt="sinister">
+            </div>
+            <!-- /.album_card -->
+            <div class="title_song p-left-4">
+                <h5>Sinister</h5>
+                <h6>Brano Nome</h6>
+            </div>
+            <!-- /.title_song -->
+            <div class="icon_left p-x-7">
+                <i class="fa-regular fa-heart"></i>
+                <i class="fa-regular fa-folder p-left-4"></i>
+            </div>
+
+        </div>
+        <!-- /.toolbar_left -->
+        <div class="toolbar_center d-flex justify-center align-center flex-column">
+            <div class="center_top d-flex align-center p-bottom-6">
+                <i class="fa-solid fa-shuffle"></i>
+                <i class="fa-solid fa-backward-step"></i>
+                <span class="icon_play">
+                    <i class="fa-regular fa-circle-play"></i>
+                </span>
+                <i class="fa-solid fa-forward-step"></i>
+                <i class="fa-solid fa-rotate-right"></i>
+            </div>
+            <!-- /.center_top -->
+            <div class="center_bottom">
+                <div class="playback_bar d-flex align-center">
+                    <h6 class="p-right-4">0:25</h6>
+                    <div class="advancement">
+                        <div class="reproduced">
+                            <div class="circle_advancement"></div>
+                        </div>   
+                    </div>
+                    <h6 class="p-left-4">4:35</h6>
+                </div>
+            </div>
+            <!-- /.center_bottom -->
+        </div>
+        <!-- /.toolbar_center -->
+        <div class="toolbar_right d-flex align-center justify-end">
+            <i class="fa-solid fa-bars"></i>
+            <i class="fa-solid fa-desktop"></i>
+            <i class="fa-solid fa-volume-high"></i>
+            <div class="volume_control">
+                <div class="advancement">
+                    <div class="reproduced">
+                        <div class="circle_advancement"></div>
+                    </div>   
+                </div>
+            </div>
+        </div>
+        <!-- /.toolbar_right -->
     </footer>
     <!-- /#toolbar -->
 
