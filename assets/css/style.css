@@ -66,7 +66,6 @@
 }
 /* #endregion Debug */
 
-
 /* #region Common */
 * {
     margin: 0;
@@ -154,6 +153,10 @@ img {
     text-align: center;
 }
 
+.p-relative {
+    position: relative;
+}
+
 .d-flex {
     display: flex;
 }
@@ -214,6 +217,10 @@ img {
     padding: 1rem 0;
 }
 
+.p-top-8 {
+    padding-top: 2rem;
+}
+
 .p-top-14 {
     padding-top: 3.5rem;
 }
@@ -268,34 +275,37 @@ img {
     min-width: 20rem;
     background-color: var(--spotify-black);
     flex-direction: column;
+    & .logo {
+        width: 200px;
+        padding: 1.75rem 0 0 1.75rem;
+    }
     & a {
         color: var(--spotify-grey-word);
     }
     & i {
         color: var(--spotify-grey-word);
     }
-    & .nav_btn i {
-        font-size: 2rem;
-        padding: 0.5rem 1.75rem;
-        width: 22%;
-    }
-    & .selected {
-        border-left: 3px solid var(--spotify-success);
-    }
-    & .not_selected {
-        border-left: 5px solid var(--spotify-black);
+    & .nav_btn svg {
+        padding: 0.25rem 0.5rem 0.25rem 1.5rem;
+        width: 70px;
     }
     & .nav_btn a {
         font-weight: 700;
         font-size: 18px;
+        display: flex;
+        align-items: center;
     }
-    & .selected i, .selected a {
-        color: var(--spotify-grey-icon);
-    } 
     & h4 {
         color: var(--spotify-white);
         font-weight: 900;
         font-size: 18px;
+    }
+    & .selected {
+        position: absolute;
+        border: 3px solid var(--spotify-success);
+        height: 100%;
+        left: 0;
+        top: 0;
     }
     & .playlist i {
         font-size: 3.5rem;
@@ -425,7 +435,9 @@ img {
         padding-top: 1.5rem;
     }
 }
+/* #endregion Main */
 
+/* #region Footer */
 #toolbar {
     height: 125px;
     width: 100vw;
@@ -484,6 +496,7 @@ img {
         height: 100%;
         background-color: var(--spotify-grey-icon);
         position: relative;
+        border-radius: 2rem;
     }
     & .circle_advancement {
         width: 15px;
@@ -517,5 +530,11 @@ img {
         width: 40%;
     }
 }
-/* #endregion Main */
+/* #endregion Footer */
 
+/* #region Media Query */
+@media screen and (max-width: 1400px) {
+    
+}
+
+/* #endregion Media Query */
