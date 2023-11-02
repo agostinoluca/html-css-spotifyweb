@@ -142,6 +142,7 @@ i:hover {
 .album_card {
     width: 15rem;
     aspect-ratio: 1 / 1;
+    position: relative;
 }
 
 
@@ -428,6 +429,21 @@ img {
     padding-top: 3rem;
     & .album_card {
         padding-top: 1rem;
+    }
+    & .play_album {
+        position: absolute;
+        color: white;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 4rem;
+        display: none;
+    }
+    & .album_card:hover img {
+        filter: opacity(0.5);
+    }
+    & .album_card:hover .play_album {
+        display: block;
     }
     & h2 {
         font-size: 2rem;
