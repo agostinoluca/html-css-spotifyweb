@@ -329,13 +329,30 @@ img {
         font-weight: 600;
         font-size: 18px;
     }
-    & .install_app i {
-        padding-right: 0.75rem;
-        font-size: 1rem;
+    & .user_icon {
+        width: 2.5rem;
+        aspect-ratio: 1 / 1;
+        background-color: var(--spotify-grey-icon);
+        border-radius: 50%;
+    }
+    & .user_icon svg {
+        width: 2.5rem;
+        aspect-ratio: 1 / 1;
+        border-radius: 50%;
     }
     & .install_app a {
         font-size: 18px;
         font-weight: 500;
+    }
+    & .install_app_icon svg {
+        width: 1.5rem;
+        aspect-ratio: 1 / 1;
+        display: flex;
+    }
+    & .install_app:hover {
+        transform: scale(1.2);
+        padding-left: 1rem;
+        filter: brightness(100);
     }
     & .hr_bottom_bar {
         border: 1px solid var(--spotify-grey-word);
