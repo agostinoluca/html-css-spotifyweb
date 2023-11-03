@@ -498,6 +498,10 @@ img {
         transform: scale(1.2);
         filter: brightness(100);
     }
+    & .toolbar_right,
+      .toolbar_left {
+        flex-grow: 1;
+    }
     & .toolbar_center {
         flex-grow: 2;
     }
@@ -569,11 +573,18 @@ img {
     }
     & .toolbar_right i {
         font-size: 0.75rem;
-        padding: 0 1.5rem;
+        padding: 0 1rem;
         color: var(--spotify-white);
     }
     & .volume_control {
-        width: 30%;
+        width: 40%;
+        min-width: 50px;
+    }
+    & .volume_level {
+        width: 100%;
+        height: 5px;
+        border-radius: 2rem;
+        background-color: var(--spotify-grey-word);
     }
     & .volume_control .reproduced {
         width: 40%;
@@ -582,7 +593,15 @@ img {
 /* #endregion Footer */
 
 /* #region Media Query */
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1200px) {
+    
+}
+
+@media screen and (max-width: 768px) {
+    
+}
+
+@media screen and (max-width: 480px) {
     
 }
 
