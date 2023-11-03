@@ -124,7 +124,6 @@ i:hover {
 
 [class^="col-"] {
 	padding: 0 1rem;
-    min-width: fit-content;
 }
 
 .col-2 {
@@ -140,7 +139,6 @@ i:hover {
 }
 
 .album_card {
-    width: 15rem;
     aspect-ratio: 1 / 1;
     position: relative;
 }
