@@ -14,21 +14,22 @@
     <title>Spotify</title>
     <link rel="icon" type="image/x-icon" href="./assets/img/favicon.ico">
 </head>
-<body class="debug">
+<body class="">
   
     <main id="site_main" class="d-flex">
-        <div class="nav_bar d-flex space-between">
+        <div class="nav_bar d-flex space-between flex-column">
             <div class="top_bar">
                 <div class="logo">
                     <img src="./assets/img/logo.svg" alt="Spotify-logo">
                 </div>
                 <!-- /.logo -->
-                <div class="nav_btn p-top-8">
+                <div class="nav_btn">
                     <ul class="d-flex flex-column">
                         <li>
                             <div class="home_icon p-relative">
                                 <a href="#">
-                                    <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M448 463.746h-149.333v-149.333h-85.334v149.333h-149.333v-315.428l192-111.746 192 110.984v316.19z" fill="#a3a3a3"/></svg>                                <span>Home</span>
+                                    <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M448 463.746h-149.333v-149.333h-85.334v149.333h-149.333v-315.428l192-111.746 192 110.984v316.19z" fill="#ffffff"/></svg>                                
+                                    <span>Home</span>
                                 </a>
                                 <div class="selected"></div>
                             </div>
@@ -49,7 +50,7 @@
                     </ul>
                 </div>
                 <!-- /.nav_btn -->
-                <div class="playlist p-7">
+                <div class="playlist p-4">
                     <h4 class="p-bottom-5">PLAYLIST</h4>
                     <div class="create_playlist d-flex align-center">
                         <i class="fa-solid fa-square-plus"></i>
@@ -115,7 +116,7 @@
                 </div>
             </div>
             <!-- /.banner_upgrade -->
-            <div class="discography p-x-7">
+            <div class="discography">
                 <div class="album_nav d-flex p-y-4">
                     <ul class="d-flex fw-wrap justify-center">
                         <li>
@@ -311,7 +312,7 @@
         </div>
         <!-- /.toolbar_left -->
         <div class="toolbar_center d-flex justify-center align-center flex-column">
-            <div class="center_top d-flex align-center p-bottom-6">
+            <div class="center_top d-flex align-center p-top-4">
                 <i class="fa-solid fa-shuffle"></i>
                 <i class="fa-solid fa-backward-step"></i>
                 <span class="icon_play">
@@ -321,15 +322,17 @@
                 <i class="fa-solid fa-rotate-right"></i>
             </div>
             <!-- /.center_top -->
-            <div class="center_bottom">
+            <div class="center_bottom p-bottom-4">
                 <div class="playback_bar d-flex align-center">
-                    <h6 class="p-right-4">0:25</h6>
-                    <div class="advancement">
-                        <div class="reproduced">
-                            <div class="circle_advancement"></div>
-                        </div>   
-                    </div>
-                    <h6 class="p-left-4">4:35</h6>
+                        <div class="play_bar_container d-flex justify-center align-center p-top-2">
+                            <h6 class="p-right-4">0:25</h6>  
+                            <div class="advancement">
+                                <div class="reproduced">
+                                    <div class="circle_advancement"></div>
+                                </div>   
+                            </div>
+                            <h6 class="p-left-4">4:35</h6>
+                        </div>
                 </div>
             </div>
             <!-- /.center_bottom -->

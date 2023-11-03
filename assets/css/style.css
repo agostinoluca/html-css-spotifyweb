@@ -123,7 +123,7 @@ i:hover {
 }
 
 [class^="col-"] {
-	padding: 0 1rem;
+	padding: 0 0.5rem;
 }
 
 .col-2 {
@@ -216,12 +216,28 @@ img {
     padding: 1rem 0;
 }
 
+.p-y-6 {
+    padding: 1.5rem 0;
+}
+
+.p-top-2 {
+    padding-top: 0.5rem;
+}
+
+.p-top-4 {
+    padding-top: 1rem;
+}
+
 .p-top-8 {
     padding-top: 2rem;
 }
 
 .p-top-14 {
     padding-top: 3.5rem;
+}
+
+.p-bottom-4 {
+    padding-bottom: 1.25rem;
 }
 
 .p-bottom-5 {
@@ -267,16 +283,15 @@ img {
 
 /* #region Main */
 #site_main {
-    height: calc(100vh - 125px);
+    height: calc(100vh - 90px);
 }
 
 .nav_bar {
-    min-width: 20rem;
+    min-width: 230px;
     background-color: var(--spotify-black);
-    flex-direction: column;
     & .logo {
-        width: 200px;
-        padding: 1.75rem 0 0 1.75rem;
+        width: 9rem;
+        padding: 1.25rem 0 1rem 1rem;
     }
     & a {
         color: var(--spotify-grey-word);
@@ -285,36 +300,39 @@ img {
         color: var(--spotify-grey-word);
     }
     & .nav_btn svg {
-        padding: 0.25rem 0.5rem 0.25rem 1.5rem;
-        width: 70px;
+        padding: 0.25rem 0.5rem 0.25rem 1rem;
+        width: 50px;
     }
     & .nav_btn a {
-        font-weight: 700;
-        font-size: 18px;
+        font-weight: 600;
+        font-size: 13px;
         display: flex;
         align-items: center;
     }
     & h4 {
         color: var(--spotify-white);
-        font-weight: 900;
-        font-size: 18px;
+        font-weight: 600;
+        font-size: 14px;
+    }
+    & .home_icon span {
+        color: var(--spotify-white);
     }
     & .selected {
         position: absolute;
-        border: 3px solid var(--spotify-success);
+        border: 2px solid var(--spotify-success);
         height: 100%;
         left: 0;
         top: 0;
     }
     & .playlist i {
-        font-size: 3.5rem;
+        font-size: 2.25rem;
         color: var(--spotify-grey-icon);
     }
     & .playlist span {
         color: var(--spotify-grey-word);
         padding-left: 0.5rem;
-        font-weight: 700;
-        font-size: 20px;    
+        font-weight: 600;
+        font-size: 15px;    
     }
     & .playlist .create_playlist:hover,
       .install_app:hover {
@@ -322,35 +340,35 @@ img {
         filter: brightness(100);
     }
     & .playlist li {
-        padding: 1rem 0;
+        padding: 0.5rem 0;
     }
     & .playlist a {
-        font-weight: 600;
-        font-size: 18px;
+        font-weight: 500;
+        font-size: 13px;
     }
     & .user_icon {
-        width: 2.5rem;
+        width: 1.5rem;
         aspect-ratio: 1 / 1;
         background-color: var(--spotify-grey-icon);
         border-radius: 50%;
     }
     & .user_icon svg {
-        width: 2.5rem;
+        width: 1.5rem;
         aspect-ratio: 1 / 1;
         border-radius: 50%;
     }
     & .install_app a {
-        font-size: 18px;
+        font-size: 13px;
         font-weight: 500;
     }
     & .install_app_icon svg {
-        width: 1.5rem;
+        width: 1rem;
         aspect-ratio: 1 / 1;
         display: flex;
     }
     & .install_app:hover {
         transform: scale(1.2);
-        padding-left: 1rem;
+        padding-left: 0.5rem;
         filter: brightness(100);
     }
     & .hr_bottom_bar {
@@ -366,8 +384,8 @@ img {
 
 .banner_upgrade {
     background-color: var(--spotify-header);
-    height: 125px;
-    width: calc(100% - 20rem);
+    height: 90px;
+    width: calc(100% - 230px);
     position: fixed;
     z-index: 1;
     & .subscription {
@@ -375,9 +393,9 @@ img {
     }
     & .btn {
         color: var(--spotify-white);
-        padding: 1rem 3.5rem;
-        font-size: 1rem;
-        font-weight: 700;
+        padding: 1rem 2.5rem;
+        font-size: 13px;
+        font-weight: 600;
         border: 1px solid var(--spotify-white);
         border-radius: 3rem;
     }
@@ -395,7 +413,7 @@ img {
 .discography {
     width: 100%;
     height: 100%;
-    padding-top: 125px;
+    padding-top: 90px;
 }
 
 .album_nav {
@@ -404,7 +422,7 @@ img {
     & a {
         color: var(--spotify-grey-word);
         padding: 0 0.5rem;
-        font-size: 18px;
+        font-size: 13px;
         font-weight: 700;
     }
     & li {
@@ -444,13 +462,13 @@ img {
         display: block;
     }
     & h2 {
-        font-size: 2rem;
+        font-size: 23px;
         font-weight: 800;
         color: var(--spotify-white);
     }
     & h3 {
-        font-size: 21px;
-        font-weight: 900;
+        font-size: 16px;
+        font-weight: 700;
         color: var(--spotify-white);
         padding: 1.75rem 0 1rem 0;
     }
@@ -460,7 +478,7 @@ img {
         color: var(--spotify-grey-word);
     }
     & p {
-        font-size: 1rem;
+        font-size: 11px;
         font-weight: 800;
         color: var(--spotify-grey-word);
         padding-top: 1.5rem;
@@ -470,7 +488,7 @@ img {
 
 /* #region Footer */
 #toolbar {
-    height: 125px;
+    height: 90px;
     width: 100vw;
     position: fixed;
     z-index: 1;
@@ -479,9 +497,6 @@ img {
     & i:hover {
         transform: scale(1.2);
         filter: brightness(100);
-    }
-    & .toolbar_left, .toolbar_right {
-        flex-grow: 1;
     }
     & .toolbar_center {
         flex-grow: 2;
@@ -492,32 +507,35 @@ img {
     }
     & h5 {
         color: var(--spotify-white);
-        font-size: 1rem;
+        font-size: 12px;
         font-weight: 700;
     }
     & h6 {
         color: var(--spotify-grey-word);
-        font-size: 14px;
+        font-size: 10px;
         font-weight: 600;
     }
     & .toolbar_left i {
         color: var(--spotify-grey-word);
-        font-size: 1.5rem;
+        font-size: 1rem;
     }
     & .toolbar_center i {
         color: var(--spotify-white);
-        font-size: 1.5rem;
-        padding: 0 1.75rem;
+        font-size: 1rem;
+        padding: 0 1.25rem;
     }
     & .icon_play i {
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
     & .center_bottom, 
       .playback_bar {
         width: 100%;
     }
-    & .advancement {
+    & .play_bar_container {
         width: 100%;
+    }
+    & .advancement {
+        width: 60%;
         height: 5px;
         border-radius: 2rem;
         background-color: var(--spotify-grey-word);
@@ -550,7 +568,7 @@ img {
         color: var(--spotify-white);
     }
     & .toolbar_right i {
-        font-size: 1.5rem;
+        font-size: 0.75rem;
         padding: 0 1.5rem;
         color: var(--spotify-white);
     }
