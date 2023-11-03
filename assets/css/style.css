@@ -228,6 +228,10 @@ img {
     padding-top: 1rem;
 }
 
+.p-top-6 {
+    padding-top: 1.5rem;
+}
+
 .p-top-8 {
     padding-top: 2rem;
 }
@@ -442,7 +446,6 @@ img {
 
 .album_list {
     height: 100%;
-    padding-top: 3rem;
     & .album_card {
         padding-top: 1rem;
     }
@@ -452,7 +455,7 @@ img {
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        font-size: 4rem;
+        font-size: 3rem;
         display: none;
     }
     & .album_card:hover img {
@@ -470,7 +473,7 @@ img {
         font-size: 16px;
         font-weight: 700;
         color: var(--spotify-white);
-        padding: 1.75rem 0 1rem 0;
+        padding: 0.5rem 0;
     }
     & h4 {
         font-size: 1rem;
@@ -481,7 +484,7 @@ img {
         font-size: 11px;
         font-weight: 800;
         color: var(--spotify-grey-word);
-        padding-top: 1.5rem;
+        padding: 0.5rem 0;
     }
 }
 /* #endregion Main */
@@ -506,7 +509,7 @@ img {
         flex-grow: 2;
     }
     & .album_card {
-        width: 3.75rem;
+        width: 1.75rem;
         aspect-ratio: 1 / 1;
     }
     & h5 {
@@ -526,10 +529,10 @@ img {
     & .toolbar_center i {
         color: var(--spotify-white);
         font-size: 1rem;
-        padding: 0 1.25rem;
+        padding: 0 1rem;
     }
     & .icon_play i {
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
     & .center_bottom, 
       .playback_bar {
@@ -573,12 +576,11 @@ img {
     }
     & .toolbar_right i {
         font-size: 0.75rem;
-        padding: 0 1rem;
+        padding: 0 0.5rem;
         color: var(--spotify-white);
     }
     & .volume_control {
         width: 40%;
-        min-width: 50px;
     }
     & .volume_level {
         width: 100%;
@@ -594,15 +596,71 @@ img {
 
 /* #region Media Query */
 @media screen and (max-width: 1200px) {
-    
+    .col-3-md {
+        width: calc((100% / 12) * 3);
+    }
+
+    .album_list {
+        padding: 0 1rem;
+    }
 }
 
 @media screen and (max-width: 768px) {
-    
+    .col-6-s {
+        width: calc((100% / 12) * 6);
+    }
+
+    [class^="col-"] {
+        padding: 0 0.75rem;
+    }
+
+    .icon_left {
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        gap: 5px;
+    }
+
+    .title_song {
+        padding-left: 0.5rem;
+    }
+
+    .icon_left {
+        padding-left: 0.5rem;
+    }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 568px) {
+    .icon_left {
+        padding: 0;
+        padding-right: 0.5rem;
+    }
+
+    .nav_bar {
+        display: none;
+    }
+
+    .banner_upgrade {
+        width: calc(100% - 3rem);
+    }
+
+    .nav_bar_xs {
+        display: block;
+        width: 3rem;
+        background-color: var(--spotify-black);
+        padding: 0.5rem;
+    }
+
+    .toolbar_right {
+        position: relative;
+    }
     
+    .volume_control {
+        position: absolute;
+        right: 0;
+        bottom: 10px;
+        width: 100%;
+    }
 }
 
 /* #endregion Media Query */
