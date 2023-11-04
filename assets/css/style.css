@@ -200,24 +200,12 @@ img {
     padding: 1rem;
 }
 
-.p-7 {
-    padding: 1.75rem;
-}
-
-.p-x-4 {
-    padding: 0 1rem;
-}
-
 .p-x-7 {
     padding: 0 1.75rem;
 }
 
 .p-y-4 {
     padding: 1rem 0;
-}
-
-.p-y-6 {
-    padding: 1.5rem 0;
 }
 
 .p-top-2 {
@@ -232,28 +220,12 @@ img {
     padding-top: 1.5rem;
 }
 
-.p-top-8 {
-    padding-top: 2rem;
-}
-
-.p-top-14 {
-    padding-top: 3.5rem;
-}
-
 .p-bottom-4 {
     padding-bottom: 1.25rem;
 }
 
 .p-bottom-5 {
     padding-bottom: 1.25rem;
-}
-
-.p-bottom-6 {
-    padding-bottom: 1.5rem;
-}
-
-.p-bottom-10 {
-    padding-bottom: 2.5rem;
 }
 
 .p-left-4 {
@@ -471,7 +443,7 @@ img {
         color: var(--spotify-white);
     }
     & h3 {
-        font-size: 16px;
+        font-size: 1rem;
         font-weight: 700;
         color: var(--spotify-white);
         padding: 0.5rem 0;
@@ -629,14 +601,24 @@ img {
     .icon_left {
         padding-left: 0.5rem;
     }
-}
 
-@media screen and (max-width: 568px) {
-    .icon_left {
-        padding: 0;
-        padding-right: 0.5rem;
+    ::-webkit-scrollbar {
+        width: 18px;
     }
 
+    .toolbar_right {
+        position: relative;
+    }
+    
+    .volume_control {
+        position: absolute;
+        right: 0;
+        bottom: 10px;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px) {
     .nav_bar {
         display: none;
     }
@@ -654,17 +636,6 @@ img {
         padding: 0.5rem;
     }
 
-    .toolbar_right {
-        position: relative;
-    }
-    
-    .volume_control {
-        position: absolute;
-        right: 0;
-        bottom: 10px;
-        width: 100%;
-    }
-
     .download_icon_xs {
         width: 1.5rem;
     }
@@ -679,6 +650,35 @@ img {
         border-radius: 100%;
         background-color: var(--spotify-grey-word);
         text-align: center;
+    }
+
+    ::-webkit-scrollbar {
+        width: 15px;
+    }
+
+    .subscription .btn {
+        font-size: 10px;
+        font-weight: 600;
+        border: 1px solid var(--spotify-white);
+        padding: 0.75rem 2rem;
+    }
+
+    #toolbar .icon_left i {
+        padding: 0;
+    }
+
+    #toolbar .center_top i {
+        padding: 0.5rem;
+    }
+
+    #toolbar .toolbar_right i {
+        padding: 0.25rem;
+    }
+}
+
+@media screen and (max-height: 740px) {
+    .nav_bar .top_bar li {
+        display: none;
     }
 }
 
