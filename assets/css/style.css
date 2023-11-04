@@ -351,13 +351,14 @@ img {
         font-size: 13px;
     }
     & .user_icon {
-        width: 1.5rem;
+        width: 1.8rem;
         aspect-ratio: 1 / 1;
-        background-color: var(--spotify-grey-icon);
+        background-color: var(--spotify-grey-word);
         border-radius: 50%;
+        text-align: center;
     }
     & .user_icon svg {
-        width: 1.5rem;
+        width: 1.8rem;
         aspect-ratio: 1 / 1;
         border-radius: 50%;
     }
@@ -645,7 +646,9 @@ img {
     }
 
     .nav_bar_xs {
-        display: block;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
         width: 3rem;
         background-color: var(--spotify-black);
         padding: 0.5rem;
@@ -660,6 +663,22 @@ img {
         right: 0;
         bottom: 10px;
         width: 100%;
+    }
+
+    .download_icon_xs {
+        width: 1.5rem;
+    }
+
+    .user_icon_xs svg {
+        width: 1.4rem;
+        aspect-ratio: 1 / 1;
+    }
+
+    .user_icon_xs {
+        width: 1.7rem;
+        border-radius: 100%;
+        background-color: var(--spotify-grey-word);
+        text-align: center;
     }
 }
 
