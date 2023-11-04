@@ -705,9 +705,19 @@ div.clickEffect{
     }
 }
 
-@media screen and (max-height: 740px) {
-    .nav_bar .top_bar li {
+@media screen and (max-height: 725px) {
+    .nav_bar .top_bar .playlist li {
         display: none;
+    }
+
+    .playlist .d-none {
+        display: block;
+    }
+
+    .playlist .d-none i {
+        display: block;
+        font-size: 15px;
+        color: var(--spotify-grey-word);
     }
 }
 
