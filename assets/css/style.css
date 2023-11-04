@@ -89,6 +89,10 @@ body {
     --spotify-scrollbar: #c8c8c8;
 }
 
+img {
+    width: 100%;
+}
+
 ul {
     list-style: none;
 }
@@ -111,6 +115,8 @@ i:hover {
 /* #endregion Common */
 
 /* #region Utility */
+
+/* LAYOUT */
 .container {
 	margin: auto;
 	width: 95%;
@@ -134,28 +140,12 @@ i:hover {
     width: 100%;
 }
 
-.radius-100 {
-    border-radius: 100%;
-}
-
 .album_card {
     aspect-ratio: 1 / 1;
     position: relative;
 }
 
-
-img {
-    width: 100%;
-}
-
-.text-center {
-    text-align: center;
-}
-
-.p-relative {
-    position: relative;
-}
-
+/* FLEX */
 .d-flex {
     display: flex;
 }
@@ -188,14 +178,7 @@ img {
     align-items: center;
 }
 
-.flex-end {
-    align-items:flex-end;
-}
-
-.m-auto {
-    margin: auto;
-}
-
+/* PADDING */
 .p-4 {
     padding: 1rem;
 }
@@ -235,6 +218,19 @@ img {
 .p-right-4 {
     padding-right: 1rem;
 }
+
+/* OTHER */
+.text-center {
+    text-align: center;
+}
+
+.p-relative {
+    position: relative;
+}
+
+.radius-100 {
+    border-radius: 100%;
+}
 /* #endregion Utility */
 
 /* #region Click mouse effect */
@@ -264,7 +260,6 @@ div.clickEffect{
     }
 }
 /* #endregion Click mouse effect */
-
 
 /* #region scrollbar */
 ::-webkit-scrollbar {
@@ -511,7 +506,7 @@ div.clickEffect{
         flex-grow: 2;
     }
     & .album_card {
-        width: 1.75rem;
+        width: 2.5rem;
         aspect-ratio: 1 / 1;
     }
     & h5 {
@@ -532,6 +527,10 @@ div.clickEffect{
     & .toolbar_left i {
         color: var(--spotify-grey-word);
         font-size: 1rem;
+    }
+    & .icon_left span i:hover {
+        color: red;
+        filter: none;
     }
     & .toolbar_center i {
         color: var(--spotify-white);
@@ -613,6 +612,10 @@ div.clickEffect{
 }
 
 @media screen and (max-width: 768px) {
+    ::-webkit-scrollbar {
+        width: 18px;
+    }
+    
     .col-6-s {
         width: calc((100% / 12) * 6);
     }
@@ -621,23 +624,20 @@ div.clickEffect{
         padding: 0 0.75rem;
     }
 
+    .album_list .col-12 {
+        padding-top: 1rem;
+    }
+
     .icon_left {
         display: flex;
         flex-direction: column;
         align-items: end;
         gap: 5px;
+        padding-left: 0.5rem;
     }
 
     .title_song {
         padding-left: 0.5rem;
-    }
-
-    .icon_left {
-        padding-left: 0.5rem;
-    }
-
-    ::-webkit-scrollbar {
-        width: 18px;
     }
 
     .toolbar_right {
@@ -653,12 +653,12 @@ div.clickEffect{
 }
 
 @media screen and (max-width: 480px) {
-    .nav_bar {
-        display: none;
+    ::-webkit-scrollbar {
+        width: 15px;
     }
 
-    .banner_upgrade {
-        width: calc(100% - 3rem);
+    .nav_bar {
+        display: none;
     }
 
     .nav_bar_xs {
@@ -669,7 +669,7 @@ div.clickEffect{
         background-color: var(--spotify-black);
         padding: 0.5rem;
     }
-
+    
     .download_icon_xs {
         width: 1.5rem;
     }
@@ -686,8 +686,8 @@ div.clickEffect{
         text-align: center;
     }
 
-    ::-webkit-scrollbar {
-        width: 15px;
+    .banner_upgrade {
+        width: calc(100% - 3rem);
     }
 
     .subscription .btn {
