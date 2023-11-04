@@ -726,4 +726,9 @@ div.clickEffect{
     }
 }
 
+@media screen and (max-height: 480px) {
+    .bottom_bar {
+        display: none;
+    }
+}
 /* #endregion Media Query */
