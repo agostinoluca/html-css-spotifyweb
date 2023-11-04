@@ -183,6 +183,10 @@ i:hover {
     padding: 1rem;
 }
 
+.p-x-4 {
+    padding: 0 1rem;
+}
+
 .p-x-7 {
     padding: 0 1.75rem;
 }
@@ -232,34 +236,6 @@ i:hover {
     border-radius: 100%;
 }
 /* #endregion Utility */
-
-/* #region Click mouse effect */
-div.clickEffect{
-    position: fixed;
-    box-sizing: border-box;
-    border-style: solid;
-    border-color: var(--spotify-grey-icon);
-    border-radius: 50%;
-    animation:clickEffect 0.3s linear;
-    z-index:99999;
-}
-@keyframes clickEffect{
-    0%{
-        opacity: 1;
-        width: 0.5rem; 
-        height: 0.5rem;
-        margin:-0.25rem;
-        border-width: 0.5rem;
-    }
-    100%{
-        opacity: 0.1;
-        width: 7rem; 
-        height: 7rem;
-        margin: -3.4rem;
-        border-width: 0.03rem;
-    }
-}
-/* #endregion Click mouse effect */
 
 /* #region scrollbar */
 ::-webkit-scrollbar {
@@ -633,22 +609,14 @@ div.clickEffect{
         flex-direction: column;
         align-items: end;
         gap: 5px;
-        padding-left: 0.5rem;
     }
 
     .title_song {
-        padding-left: 0.5rem;
-    }
-
-    .toolbar_right {
-        position: relative;
+        padding: 0 0.5rem;
     }
     
     .volume_control {
-        position: absolute;
-        right: 0;
-        bottom: 10px;
-        width: 100%;
+        display: none;
     }
 }
 
@@ -703,6 +671,10 @@ div.clickEffect{
 
     #toolbar .center_top i {
         padding: 0.5rem;
+    }
+
+    #toolbar .center_bottom h6 {
+        display: none;
     }
 
     #toolbar .toolbar_right i {

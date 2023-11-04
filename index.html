@@ -11,17 +11,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Css link -->
     <link rel="stylesheet" href="./assets/css/style.css">
-    <!-- Click mouse effect Javascript -->
-    <script type="text/javascript">
-        function clickEffect(e){
-            var d=document.createElement("div");
-            d.className="clickEffect";
-            d.style.top=e.clientY+"px";d.style.left=e.clientX+"px";
-            document.body.appendChild(d);
-            d.addEventListener('animationend',function(){d.parentElement.removeChild(d);}.bind(this));
-        }
-        document.addEventListener('click',clickEffect);
-    </script>
     <title>Spotify</title>
     <link rel="icon" type="image/x-icon" href="./assets/img/favicon.ico">
 </head>
@@ -349,12 +338,12 @@
                 <img src="./assets/img/sinister.jpeg" alt="sinister">
             </div>
             <!-- /.album_card -->
-            <div class="title_song p-left-4">
+            <div class="title_song p-x-4">
                 <h5>Sinister</h5>
                 <h6>Brano Nome</h6>
             </div>
             <!-- /.title_song -->
-            <div class="icon_left p-x-7">
+            <div class="icon_left">
                 <span><i class="fa-regular fa-heart"></i></span>
                 <i class="fa-regular fa-folder p-left-4"></i>
             </div>
