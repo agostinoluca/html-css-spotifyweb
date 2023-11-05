@@ -46,7 +46,7 @@
 
 .debug [class^="col-"] {
     border: 1px solid pink;
-    min-height: 50px;
+    min-height: 3rem;
 }
 
 .debug #toolbar {
@@ -140,6 +140,14 @@ i:hover {
     width: 100%;
 }
 
+.w-100 {
+    width: 100%;
+}
+
+.h-100 {
+    height: 100%;
+}
+
 .album_card {
     aspect-ratio: 1 / 1;
     position: relative;
@@ -223,7 +231,11 @@ i:hover {
     padding-right: 1rem;
 }
 
-/* OTHER */
+.p-right-7 {
+    padding-right: 1.75rem;
+}
+
+/* OTHER UTILITY */
 .text-center {
     text-align: center;
 }
@@ -239,7 +251,7 @@ i:hover {
 
 /* #region scrollbar */
 ::-webkit-scrollbar {
-    width: 20px;
+    width: 1.25rem;
 }
   
 ::-webkit-scrollbar-track {
@@ -248,8 +260,8 @@ i:hover {
    
 ::-webkit-scrollbar-thumb {
     background: var(--spotify-scrollbar);
-    border: 4px solid var(--spotify-white);
-    border-radius: 10px;
+    border: 0.25rem solid var(--spotify-white);
+    border-radius: 0.75rem;
 }
   
 ::-webkit-scrollbar-thumb:hover {
@@ -259,11 +271,11 @@ i:hover {
 
 /* #region Main */
 #site_main {
-    height: calc(100vh - 90px);
+    height: calc(100vh - 5.5rem);
 }
 
 .nav_bar {
-    min-width: 230px;
+    min-width: 14rem;
     background-color: var(--spotify-black);
     & .logo {
         width: 9rem;
@@ -277,18 +289,18 @@ i:hover {
     }
     & .nav_btn svg {
         padding: 0.25rem 0.5rem 0.25rem 1rem;
-        width: 50px;
+        width: 3rem;
     }
     & .nav_btn a {
         font-weight: 600;
-        font-size: 13px;
+        font-size: 0.75rem;
         display: flex;
         align-items: center;
     }
     & h4 {
         color: var(--spotify-white);
         font-weight: 600;
-        font-size: 14px;
+        font-size: 0.85rem;
     }
     & .home_icon span {
         color: var(--spotify-white);
@@ -308,7 +320,7 @@ i:hover {
         color: var(--spotify-grey-word);
         padding-left: 0.5rem;
         font-weight: 600;
-        font-size: 15px;    
+        font-size: 1rem;    
     }
     & .playlist .create_playlist:hover,
       .install_app:hover {
@@ -320,7 +332,7 @@ i:hover {
     }
     & .playlist a {
         font-weight: 500;
-        font-size: 13px;
+        font-size: 0.75rem;
     }
     & .user_icon {
         width: 1.8rem;
@@ -335,7 +347,7 @@ i:hover {
         border-radius: 50%;
     }
     & .install_app a {
-        font-size: 13px;
+        font-size: 0.75rem;
         font-weight: 500;
     }
     & .install_app_icon svg {
@@ -361,17 +373,14 @@ i:hover {
 
 .banner_upgrade {
     background-color: var(--spotify-header);
-    height: 90px;
-    width: calc(100% - 230px);
+    height: 5.5rem;
+    width: calc(100% - 14rem);
     position: fixed;
     z-index: 1;
-    & .subscription {
-        padding-right: 1.75rem;
-    }
     & .btn {
         color: var(--spotify-white);
         padding: 1rem 2.5rem;
-        font-size: 13px;
+        font-size: 0.75rem;
         font-weight: 600;
         border: 1px solid var(--spotify-white);
         border-radius: 3rem;
@@ -382,29 +391,26 @@ i:hover {
 }
 
 .album_container {
-    width: 100%;
     overflow: auto;
     background-color: var(--spotify-primary);
 }
 
 .discography {
-    width: 100%;
-    height: 100%;
-    padding-top: 90px;
+    padding-top: 5.5rem;
 }
 
 .album_nav {
-    justify-content: center;
-    align-items: center;
     & a {
         color: var(--spotify-grey-word);
         padding: 0 0.5rem;
-        font-size: 13px;
+        font-size: 0.75rem;
         font-weight: 700;
     }
+    
     & li {
         padding: 1rem 0;
     }
+    
     & .center_underline {
         width: 30%;
         margin: auto;
@@ -417,8 +423,8 @@ i:hover {
     }
 }
 
+
 .album_list {
-    height: 100%;
     & .album_card {
         padding-top: 1rem;
     }
@@ -438,7 +444,7 @@ i:hover {
         display: block;
     }
     & h2 {
-        font-size: 23px;
+        font-size: 1.4rem;
         font-weight: 800;
         color: var(--spotify-white);
     }
@@ -454,7 +460,7 @@ i:hover {
         color: var(--spotify-grey-word);
     }
     & p {
-        font-size: 11px;
+        font-size: 0.7rem;
         font-weight: 800;
         color: var(--spotify-grey-word);
         padding: 0.5rem 0;
@@ -464,12 +470,11 @@ i:hover {
 
 /* #region Footer */
 #toolbar {
-    height: 90px;
+    height: 5.5rem;
     width: 100vw;
     position: fixed;
     z-index: 1;
     background-color: var(--spotify-grey-toolbar);
-    padding: 1rem;
     & i:hover {
         transform: scale(1.2);
         filter: brightness(100);
@@ -487,12 +492,12 @@ i:hover {
     }
     & h5 {
         color: var(--spotify-white);
-        font-size: 12px;
+        font-size: 0.75rem;
         font-weight: 700;
     }
     & h6 {
         color: var(--spotify-grey-word);
-        font-size: 10px;
+        font-size: 0.6rem;
         font-weight: 600;
     }
     & h6:hover {
@@ -516,16 +521,9 @@ i:hover {
     & .icon_play i {
         font-size: 1.5rem;
     }
-    & .center_bottom, 
-      .playback_bar {
-        width: 100%;
-    }
-    & .play_bar_container {
-        width: 100%;
-    }
     & .advancement {
         width: 60%;
-        height: 5px;
+        height: 0.3rem;
         border-radius: 2rem;
         background-color: var(--spotify-grey-word);
     }
@@ -537,12 +535,12 @@ i:hover {
         border-radius: 2rem;
     }
     & .circle_advancement {
-        width: 15px;
+        width: 0.85rem;
         aspect-ratio: 1 / 1;
         background-color: var(--spotify-white);
         position: absolute;
-        right: -5px;
-        bottom: -5px;
+        right: -0.3rem;
+        bottom: -0.3rem;
         border-radius: 100%;
         display: none;
     }
@@ -565,8 +563,7 @@ i:hover {
         width: 40%;
     }
     & .volume_level {
-        width: 100%;
-        height: 5px;
+        height: 0.3rem;
         border-radius: 2rem;
         background-color: var(--spotify-grey-word);
     }
@@ -589,7 +586,7 @@ i:hover {
 
 @media screen and (max-width: 768px) {
     ::-webkit-scrollbar {
-        width: 18px;
+        width: 1.15rem;
     }
     
     .col-6-s {
@@ -608,7 +605,7 @@ i:hover {
         display: flex;
         flex-direction: column;
         align-items: end;
-        gap: 5px;
+        gap: 0.3rem;
     }
 
     .title_song {
@@ -622,7 +619,7 @@ i:hover {
 
 @media screen and (max-width: 480px) {
     ::-webkit-scrollbar {
-        width: 15px;
+        width: 0.9rem;
     }
 
     .nav_bar {
@@ -659,10 +656,14 @@ i:hover {
     }
 
     .subscription .btn {
-        font-size: 10px;
+        font-size: 0.6rem;
         font-weight: 600;
         border: 1px solid var(--spotify-white);
         padding: 0.75rem 2rem;
+    }
+
+    #toolbar {
+        padding: 0.5rem;
     }
 
     #toolbar .icon_left i {
@@ -693,7 +694,7 @@ i:hover {
 
     .playlist .d-none i {
         display: block;
-        font-size: 15px;
+        font-size: 0.9rem;
         color: var(--spotify-grey-word);
     }
 }
