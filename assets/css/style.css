@@ -574,6 +574,7 @@ i:hover {
 /* #endregion Footer */
 
 /* #region Media Query */
+/* MAX-WIDTH */
 @media screen and (max-width: 1200px) {
     .col-3-md {
         width: calc((100% / 12) * 3);
@@ -618,6 +619,10 @@ i:hover {
 }
 
 @media screen and (max-width: 480px) {
+    ::-webkit-scrollbar-track {
+        background: var(--spotify-black); 
+    }
+
     ::-webkit-scrollbar {
         width: 0.9rem;
     }
@@ -662,6 +667,11 @@ i:hover {
         padding: 0.75rem 2rem;
     }
 
+    .album_list h3,
+    .album_list h4 {
+        font-size: 0.75rem;
+    }
+
     #toolbar {
         padding: 0.5rem;
     }
@@ -683,6 +693,22 @@ i:hover {
     }
 }
 
+/* media query dedita al responsive su Galaxy Fold */
+@media screen and (max-width: 345px) {
+    #toolbar,
+    .title_song {
+        padding: 0.35rem;
+    }
+
+    .toolbar_left .album_card,
+    .center_top .fa-shuffle,
+    .center_top .fa-rotate-right {
+        display: none;
+    }
+}
+/* /MAX-WIDTH */
+
+/* MAX HEIGHT */
 @media screen and (max-height: 725px) {
     .nav_bar .top_bar .playlist li {
         display: none;
@@ -704,4 +730,5 @@ i:hover {
         display: none;
     }
 }
+/* /MAX HEIGHT */
 /* #endregion Media Query */
